@@ -4,6 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
+import "@/assets/styles/reset.scss";
 createApp(App)
   .use(store)
   .use(router)
