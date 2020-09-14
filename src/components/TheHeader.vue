@@ -9,14 +9,27 @@
     <RouterLink class="header__right" to="/user">
       <i class="iconfont icon-search header__icon" />
     </RouterLink>
+    <van-button square type="success">方形按钮</van-button>
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
+import axios from "axios";
+// import { updateModel } from "../service/list.js";
 
 export default defineComponent({
-  name: "TheHeader"
+  name: "TheHeader",
+  mounted() {
+    this.$toast("提示文案");
+  },
+  setup() {
+    axios
+      .get("/api/v2/data/category/GanHuo/type/Android/page/1/count/10")
+      .then(function(res) {
+        console.log(res);
+      });
+  }
 });
 </script>
 
