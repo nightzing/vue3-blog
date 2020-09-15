@@ -14,6 +14,9 @@ app.use(CellGroup);
 app
   .use(store)
   .use(router)
+  .use(store)
+  .use(Cell)
+  .use(CellGroup)
   .mount("#app");
 
 

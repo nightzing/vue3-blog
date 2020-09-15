@@ -761,6 +761,7 @@
 
 "@vant/icons@1.3.0":
   version "1.3.0"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.3.0.tgz#94f4c93122fd7331e0e00df55804779aead8c9c2"
   integrity sha1-lPTJMSL9czHg4A31WAR3murYycI=
 
@@ -768,6 +769,15 @@
   version "0.0.1"
   resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.0.1.tgz#66ed5dd186e54a6ec1b48604bfd8c0f466d9d568"
   integrity sha1-Zu1d0YblSm7BtIYEv9jA9GbZ1Wg=
+=======
+  resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.3.0.tgz?cache=0&sync_timestamp=1599114576200&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vant%2Ficons%2Fdownload%2F%40vant%2Ficons-1.3.0.tgz#94f4c93122fd7331e0e00df55804779aead8c9c2"
+  integrity sha1-lPTJMSL9czHg4A31WAR3murYycI=
+
+"@vant/use@^0.0.1-alpha.2":
+  version "0.0.1-alpha.2"
+  resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.0.1-alpha.2.tgz#c7e3ffb948b871d2496ce1e32d0874c8ead4b69a"
+  integrity sha1-x+P/uUi4cdJJbOHjLQh0yOrUtpo=
+>>>>>>> 96bb5a30ba828255deb63e80daa176475ad04271
 
 "@vue/cli-overlay@^4.5.4":
   version "4.5.4"
@@ -9329,6 +9339,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
+
+vue-cli-plugin-axios@~0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npm.taobao.org/vue-cli-plugin-axios/download/vue-cli-plugin-axios-0.0.4.tgz#29d4eb48275c7fe15b92e1fd5d95fbe2a966436f"
+  integrity sha1-KdTrSCdcf+FbkuH9XZX74qlmQ28=
 
 vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.1.0:
   version "7.1.0"
