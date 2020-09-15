@@ -9,7 +9,6 @@
     <RouterLink class="header__right" to="/user">
       <i class="iconfont icon-search header__icon" />
     </RouterLink>
-    <van-button square type="success">方形按钮</van-button>
   </header>
 </template>
 
@@ -20,9 +19,6 @@ import axios from "axios";
 
 export default defineComponent({
   name: "TheHeader",
-  mounted() {
-    this.$toast("提示文案");
-  },
   setup() {
     axios
       .get("/api/v2/data/category/GanHuo/type/Android/page/1/count/10")

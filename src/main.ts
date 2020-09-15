@@ -5,13 +5,16 @@ import router from "./router";
 import store from "./store";
 import axios from "axios";
 // import { Button } from 'vant';
-import { Toast,Button } from 'vant';
+import { Cell, CellGroup,Button } from 'vant';
+
 
 import "@/assets/styles/reset.scss";
+
 createApp(App)
   .use(store)
   .use(router)
   .use(store)
-  .use(Toast)
+  .use(Cell)
+  .use(CellGroup)
   .use(Button)
   .mount("#app");
