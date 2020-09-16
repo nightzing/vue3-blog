@@ -23,6 +23,7 @@ export default defineComponent({
     axios
       .get("/api/v2/data/category/GanHuo/type/Android/page/1/count/10")
       .then(function(res) {
+        this.$toast.fail("请求的资源不存在");
         console.log(res);
       });
   }
