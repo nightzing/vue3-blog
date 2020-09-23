@@ -761,15 +761,6 @@
 
 "@vant/icons@1.3.0":
   version "1.3.0"
-<<<<<<< HEAD
-  resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.3.0.tgz#94f4c93122fd7331e0e00df55804779aead8c9c2"
-  integrity sha1-lPTJMSL9czHg4A31WAR3murYycI=
-
-"@vant/use@^0.0.1-alpha.2":
-  version "0.0.1"
-  resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.0.1.tgz#66ed5dd186e54a6ec1b48604bfd8c0f466d9d568"
-  integrity sha1-Zu1d0YblSm7BtIYEv9jA9GbZ1Wg=
-=======
   resolved "https://registry.npm.taobao.org/@vant/icons/download/@vant/icons-1.3.0.tgz?cache=0&sync_timestamp=1599114576200&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vant%2Ficons%2Fdownload%2F%40vant%2Ficons-1.3.0.tgz#94f4c93122fd7331e0e00df55804779aead8c9c2"
   integrity sha1-lPTJMSL9czHg4A31WAR3murYycI=
 
@@ -777,7 +768,6 @@
   version "0.0.1-alpha.2"
   resolved "https://registry.npm.taobao.org/@vant/use/download/@vant/use-0.0.1-alpha.2.tgz#c7e3ffb948b871d2496ce1e32d0874c8ead4b69a"
   integrity sha1-x+P/uUi4cdJJbOHjLQh0yOrUtpo=
->>>>>>> 96bb5a30ba828255deb63e80daa176475ad04271
 
 "@vue/cli-overlay@^4.5.4":
   version "4.5.4"

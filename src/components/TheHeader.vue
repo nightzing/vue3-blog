@@ -12,19 +12,19 @@
   </header>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
-import axios from "axios";
-// import { updateModel } from "../service/list.js";
+import { updateList } from "../service/model/list";
 
 export default defineComponent({
   name: "TheHeader",
   setup() {
-    axios
-      .get("/api/v2/data/category/GanHuo/type/Android/page/1/count/10")
-      .then(function(res) {
-        this.$toast.fail("请求的资源不存在");
-        console.log(res);
+    updateList({})
+      .then(res => {
+        console.log(res, "res");
+      })
+      .catch(error => {
+        console.log("发生错误！", error);
       });
   }
 });
