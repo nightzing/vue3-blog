@@ -10,22 +10,37 @@
       <i class="iconfont icon-search header__icon" />
     </RouterLink>
   </header>
+  <van-swipe>
+    <van-swipe-item
+      class="swipe__item"
+      v-for="item in state.images"
+      :key="item.title"
+    >
+      <van-image
+        class="swipe__image"
+        width="100%"
+        height="200"
+        fit="cover"
+        :src="item.image"
+        @click="swipeView(item)"
+      />
+      <span class="swipe__title">{{ item.title }}</span>
+    </van-swipe-item>
+  </van-swipe>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { updateList } from "../service/model/list";
-
+import getSwiperData from "./ts/swipe";
 export default defineComponent({
   name: "TheHeader",
   setup() {
-    updateList({})
-      .then(res => {
-        console.log(res, "res");
-      })
-      .catch(error => {
-        console.log("发生错误！", error);
-      });
+    const { state, swipeView } = getSwiperData();
+    console.log(state);
+    return {
+      state,
+      swipeView
+    };
   }
 });
 </script>
@@ -45,5 +60,27 @@ export default defineComponent({
   .icon-search {
     color: $color-white;
   }
+}
+
+.swipe__item .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  background-color: #39a9ed;
+}
+.swipe__image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.swipe__title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 180px;
+  text-align: center;
 }
 </style>

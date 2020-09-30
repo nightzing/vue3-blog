@@ -3,6 +3,7 @@ const tsImportPluginFactory = require("ts-import-plugin");
 module.exports = {
   lintOnSave: true,
   chainWebpack: config => {
+    config.resolve.symlinks(true); // 修复热更新失效
     config.module
       .rule("ts")
       .use("ts-loader")
